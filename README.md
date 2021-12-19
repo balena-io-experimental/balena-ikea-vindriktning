@@ -1,10 +1,10 @@
 # balena-ikea-vindriktning
-A balena application for "sniffing" IKEA vindriktning readings from its internal MCU testpads
+A balena application for "sniffing" IKEA VINDRIKTNING readings from its internal MCU testpads
 
 ![20211219_024417](https://user-images.githubusercontent.com/2338223/146661877-2d85e8ae-82fe-46ab-b8d5-11085ea2a66a.jpg)
 
 ## What
-The [IKEA VINDRIKTNING](ikea.com/us/en/p/vindriktning-air-quality-sensor-60515911/) is an affordable infrared PM2.5 air quality sensor. It has an embedded MCU that performs serial reads every 2 seconds and outputs the data in the form of a 3 stage RGB LED strip:
+The [IKEA VINDRIKTNING](ikea.com/us/en/p/vindriktning-air-quality-sensor-60515911/) is an affordable infrared PM2.5 air quality sensor. It has an embedded MCU that performs serial reads over 5V logic every 2 seconds and outputs the data in the form of a 3 stage RGB LED strip:
 
 * ![#00ff00](https://via.placeholder.com/15/00ff00/000000?text=+) `GREEN` = 0-30 μg/m³
 * ![#ffff00](https://via.placeholder.com/15/ffff00/000000?text=+) `YELLOW` = 30-100 μg/m³
@@ -20,6 +20,20 @@ The design of this device is very hacker/tinker friendly:
 * __In a time when attention to air quality and ventilation should be very high, having cheap,widely/globally available and easy to hack platform to work on, is very valuable.__
 
 ## How
+
+### BoM
+
+| QTY | Name | Notes |
+|---|---|---|
+| 1 | IKEA VINDRIKTNING | link defaults to US - browse your local country IKEA website! |
+| 5 | Jumper jerky cable |  |
+| 1 | Raspberry Pi zero / zero W / zero 2 |  |
+| 1 | 8GB+ uSD card |  |
+| 4 | 2mm x 4mm self tapping screws |  |
+| 1 | 3.3V to 5V logic level shifter | needs to be SERIAL/I2C/SPI safe, such as https://www.adafruit.com/product/757 |
+| 1 | 3d-printed Adapter ring for Raspberry Pi zero / zero W / zero 2 | https://github.com/balena-io-playground/balena-ikea-vindriktning/blob/master/ikea_sensor_rpi_ring.stl |
+
+### Instructions
 
 1. On the rear side of the device there are 4 phillips head screws to remove (you will need a decently long shaft screwdiver to access them)
 2. Once the 4 screws are removed, the front and rear parts can be gently pulled to reveal the interior. You can either slide off the whole fan+sensor module or disconnect the 2 JST plugs from the PCB (the latter is suggested since we will be soldering 3 cables to the MCU PCB testpads)
@@ -46,7 +60,8 @@ The design of this device is very hacker/tinker friendly:
 
 - [x] investigate the sensor internals and ways to tap in and read data
 - [x] Implement a simple MVP hardware-wise
-- [x] Design and test a small adapter that allows a Raspberry Pi Zero device to be mounted
+- [x] Design and test a small adapter that allows a Raspberry Pi Zero/Zero W/Zero 2 device to be mounted
 - [x] Make sure data reading is working
 - [ ] Decode/parse data
 - [ ] Expose an interface for accessing the data
+- [ ] Re-design the adapter so that it encloses and protects the Raspberry Pi Zero/Zero W/Zero 2, the logic level converter and the floating jumper jerky cables
