@@ -41,3 +41,12 @@ The design of this device is very hacker/tinker friendly:
 9. Use the rpi0/rpi0w/rpi0-2 power input to power the whole assembly.
 10. Deploy this application
 11. [WIP] Get readings at the device local IP address or public URL
+
+## Progress
+
+- [x] investigate the sensor internals and ways to tap in and read data
+- [x] Implement a simple MVP hardware-wise
+- [x] Design and test a small adapter that allows a Raspberry Pi Zero device to be mounted
+- [x] Make sure data reading is working
+- [ ] Decode/parse data
+- [ ] Expose an interface for accessing the data
