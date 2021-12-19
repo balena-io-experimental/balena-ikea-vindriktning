@@ -40,7 +40,7 @@ The design of this device is very hacker/tinker friendly:
 
 ![20211219_023905](https://user-images.githubusercontent.com/2338223/146662948-8405a5e5-0c9c-4823-b3bf-f39b96991f64.jpg)
 
-4. Remove the 3 phillips head screws from the MCU PCB and slide it out of the front lid (this is suggested to make sure the soldering doesn't accidentally melt or damage the fron lid)
+4. Remove the 3 phillips head screws from the MCU PCB and slide it out of the front lid (this is suggested to make sure the soldering doesn't accidentally melt or damage the front lid)
 5. Cut off one end from 3 jumper jerky cables so that the opposite end is a female connector ( ![#ff0000](https://via.placeholder.com/15/ff0000/000000?text=+) RED for 5V, ![#000000](https://via.placeholder.com/15/000000/000000?text=+) BLACK for GND and a ![#0000ff](https://via.placeholder.com/15/0000ff/000000?text=+) color of your choice for TX is suggested) and solder them to the right testpads on the MCU PCB :
 
 ![20211219_023958](https://user-images.githubusercontent.com/2338223/146662017-4a929e2f-c2af-44c8-ad31-32920f8cc48b.jpg)
