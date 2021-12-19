@@ -51,7 +51,7 @@ The design of this device is very hacker/tinker friendly:
 
 ![20211219_024340](https://user-images.githubusercontent.com/2338223/146662115-afcb78f6-d835-47eb-8c23-06c1971dcadb.jpg)
 
-10. Mount a rpi0/rpi0w/rpi0-2 and hook the ![#ff0000](https://via.placeholder.com/15/ff0000/000000?text=+) RED one to [PIN #2](https://pinout.xyz/pinout/5v_power), ![#000000](https://via.placeholder.com/15/000000/000000?text=+) BLACK one to [PIN #6](https://pinout.xyz/pinout/ground), ![#0000ff](https://via.placeholder.com/15/0000ff/000000?text=+) COLOR one to [PIN #10](https://pinout.xyz/pinout/pin10_gpio15)
+10. Mount a rpi0/rpi0w/rpi0-2 and hook the ![#ff0000](https://via.placeholder.com/15/ff0000/000000?text=+) RED cable (5V) to [PIN #2](https://pinout.xyz/pinout/5v_power), ![#000000](https://via.placeholder.com/15/000000/000000?text=+) BLACK cable (GND) to [PIN #6](https://pinout.xyz/pinout/ground), ![#0000ff](https://via.placeholder.com/15/0000ff/000000?text=+) COLOR cable (TX 3V3 shifted) to [PIN #10](https://pinout.xyz/pinout/pin10_gpio15)
 
 ![20211219_024244](https://user-images.githubusercontent.com/2338223/146662032-303c675f-6135-4ca0-a75f-7a3017edafe9.jpg)
 
