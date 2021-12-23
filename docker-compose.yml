@@ -7,7 +7,7 @@ services:
     network_mode: "host"
     devices:
       - "/dev:/dev"
-    labels: 
+    labels:
       io.balena.features.sysfs: '1'
     environment:
       DEBUG: "serial"
