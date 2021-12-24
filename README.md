@@ -31,7 +31,7 @@ The design of this device is very hacker/tinker friendly:
 | 1 | 8GB+ uSD card |  |
 | 4 | 2mm x 4mm self tapping screws | I used screws from this set: https://www.amazon.com/dp/B08YDP9DBF/ |
 | 1 | 3.3V to 5V logic level shifter | needs to be SERIAL/I2C/SPI safe, such as https://www.adafruit.com/product/757 |
-| 1 | 3d-printed Adapter ring for Raspberry Pi zero / zero W / zero 2 | https://github.com/balena-io-playground/balena-ikea-vindriktning/blob/master/ikea_sensor_rpi_ring.stl |
+| 1 | 3d-printed lid for Raspberry Pi zero / zero W / zero 2 | https://github.com/balena-io-playground/balena-ikea-vindriktning/blob/master/ikea_sensor_rpi_lid.stl |
 
 ### Instructions
 
