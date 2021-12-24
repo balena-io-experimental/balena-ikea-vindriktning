@@ -1,7 +1,7 @@
 # balena-ikea-vindriktning
 A balena application for "sniffing" IKEA VINDRIKTNING readings from its internal MCU testpads
 
-![image](https://user-images.githubusercontent.com/2338223/147313212-bb32d9a2-9e62-4784-8ae1-68737ebcaba3.png)
+![image](https://user-images.githubusercontent.com/2338223/147313288-e4ef057c-9a1e-4643-a7ee-15b5d9d1bbdf.png)
 
 ## What
 The [IKEA VINDRIKTNING](ikea.com/us/en/p/vindriktning-air-quality-sensor-60515911/) is an affordable infrared PM2.5 air quality sensor. It has an embedded MCU that performs serial reads over 5V logic every 2 seconds and outputs the data in the form of a 3 stage RGB LED strip:
