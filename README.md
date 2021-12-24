@@ -40,24 +40,27 @@ The design of this device is very hacker/tinker friendly:
 
 ![20211219_023905](https://user-images.githubusercontent.com/2338223/146662948-8405a5e5-0c9c-4823-b3bf-f39b96991f64.jpg)
 
-4. Remove the 3 phillips head screws from the MCU PCB and slide it out of the front lid (this is suggested to make sure the soldering doesn't accidentally melt or damage the front lid)
+4. Remove the 3 phillips head screws from the MCU PCB and slide it out of the front lid
 5. Cut off one end from 3 jumper jerky cables so that the opposite end is a female connector ( ![#ff0000](https://via.placeholder.com/15/ff0000/000000?text=+) RED for 5V, ![#000000](https://via.placeholder.com/15/000000/000000?text=+) BLACK for GND and a ![#0000ff](https://via.placeholder.com/15/0000ff/000000?text=+) color of your choice for TX is suggested) and solder them to the right testpads on the MCU PCB :
 
 ![20211219_023958](https://user-images.githubusercontent.com/2338223/146662017-4a929e2f-c2af-44c8-ad31-32920f8cc48b.jpg)
 
-6. Slide the 3 jerky cables through the rpi0 ring adapter, close the rear and front case parts with the 4 phillips head screws on the rear
-7. Cut the other end of the ![#0000ff](https://via.placeholder.com/15/0000ff/000000?text=+) TX cable and solder it to one of the High Voltage pins of the logic lever shifter. Then solder to the corresponding Low Voltage pin a same-color jumper jerky cable so that the opposite end is a female connector
-8. Cut the other end of the ![#000000](https://via.placeholder.com/15/000000/000000?text=+) GND cable and solder it to one of the High Voltage GND pin of the logic lever shifter. Then solder to the corresponding Low Voltage GND pin a same-color jumper jerky cable so that the opposite end is a female connector
+6. Cut the other end of the ![#0000ff](https://via.placeholder.com/15/0000ff/000000?text=+) TX cable and solder it to one of the High Voltage pins of the logic lever shifter. Then solder to the corresponding Low Voltage pin a same-color jumper jerky cable so that the opposite end is a female connector
+7. Cut the other end of the ![#000000](https://via.placeholder.com/15/000000/000000?text=+) GND cable and solder it to one of the High Voltage GND pin of the logic lever shifter. Then solder to the corresponding Low Voltage GND pin a same-color jumper jerky cable so that the opposite end is a female connector
 
 ![20211219_024340](https://user-images.githubusercontent.com/2338223/146662115-afcb78f6-d835-47eb-8c23-06c1971dcadb.jpg)
 
-10. Mount a rpi0/rpi0w/rpi0-2 and hook the ![#ff0000](https://via.placeholder.com/15/ff0000/000000?text=+) RED cable (5V) to [PIN #2](https://pinout.xyz/pinout/5v_power), ![#000000](https://via.placeholder.com/15/000000/000000?text=+) BLACK cable (GND) to [PIN #6](https://pinout.xyz/pinout/ground), ![#0000ff](https://via.placeholder.com/15/0000ff/000000?text=+) COLOR cable (TX 3V3 shifted) to [PIN #10](https://pinout.xyz/pinout/pin10_gpio15)
+8. Secure the MCU in the 3d printed lid (compared to the picture below, your MCU will have the 3 floating cables attached)
 
-![20211219_024244](https://user-images.githubusercontent.com/2338223/146662032-303c675f-6135-4ca0-a75f-7a3017edafe9.jpg)
+![image](https://user-images.githubusercontent.com/2338223/147313902-57a75c21-29ce-40f7-9daf-047594190f0f.png)
 
-9. Use the rpi0/rpi0w/rpi0-2 power input to power the whole assembly.
-10. Deploy this application
-11. [WIP] Get readings at the device local IP address or public URL
+9. Mount a rpi0/rpi0w/rpi0-2 and hook the ![#ff0000](https://via.placeholder.com/15/ff0000/000000?text=+) RED cable (5V) to [PIN #2](https://pinout.xyz/pinout/5v_power), ![#000000](https://via.placeholder.com/15/000000/000000?text=+) BLACK cable (GND) to [PIN #6](https://pinout.xyz/pinout/ground), ![#0000ff](https://via.placeholder.com/15/0000ff/000000?text=+) COLOR cable (TX 3V3 shifted) to [PIN #10](https://pinout.xyz/pinout/pin10_gpio15)
+
+10. Slide the logic lever shifter and the floating cables aside the Raspberry Pi zero / zero W / zero 2
+11. Close the rear and front case parts and secure them with the 4 phillips head screws on the rear
+12. Use the rpi0/rpi0w/rpi0-2 power input to power the whole assembly.
+13. Deploy this application
+14. [WIP] Get readings at the device local IP address or public URL
 
 ## Progress
 
