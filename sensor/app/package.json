@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha",
     "start": "node index.js"
   },
   "author": "curcuz <carlo@balena.io>",
@@ -13,6 +13,10 @@
     "esversion": 8
   },
   "dependencies": {
+    "debug": "^4.3.3",
     "serialport": "^9.2.8"
+  },
+  "devDependencies": {
+    "mocha": "^9.1.3"
   }
 }
