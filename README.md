@@ -67,4 +67,4 @@ The design of this device is very hacker/tinker friendly:
 - [x] Make sure data reading is working
 - [ ] Decode/parse data
 - [ ] Expose an interface for accessing the data
-- [ ] Re-design the adapter so that it encloses and protects the Raspberry Pi Zero/Zero W/Zero 2, the logic level converter and the floating jumper jerky cables
+- [x] Re-design the adapter so that it encloses and protects the Raspberry Pi Zero/Zero W/Zero 2, the logic level converter and the floating jumper jerky cables
