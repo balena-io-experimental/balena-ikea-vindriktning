@@ -1,7 +1,7 @@
 version: '2'
 services:
   serial:
-    build: ./serial
+    build: ./sensor
     restart: always
     privileged: true
     network_mode: "host"
@@ -10,4 +10,4 @@ services:
     labels:
       io.balena.features.sysfs: '1'
     environment:
-      DEBUG: "serial"
+      DEBUG: "sensor"
