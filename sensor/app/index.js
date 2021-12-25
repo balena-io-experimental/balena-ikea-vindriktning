@@ -43,7 +43,7 @@ app.use(function (req, res, next) {
 });
 
 app.get('/', function (req, res) {
-    res.send(sensorRead);
+    res.status(200).send(sensorRead);
 })
 
 app.listen(80)
