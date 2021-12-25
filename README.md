@@ -1,7 +1,8 @@
 # balena-ikea-vindriktning
 A balena application for "sniffing" IKEA VINDRIKTNING readings from its internal MCU testpads
 
-![image](https://user-images.githubusercontent.com/2338223/147313288-e4ef057c-9a1e-4643-a7ee-15b5d9d1bbdf.png)
+![20211225_161956](https://user-images.githubusercontent.com/2338223/147388523-7d24591c-ecac-465d-a1ab-34a796f4b5f9.jpg)
+
 
 ## What
 The [IKEA VINDRIKTNING](ikea.com/us/en/p/vindriktning-air-quality-sensor-60515911/) is an affordable infrared PM2.5 air quality sensor. It has an embedded MCU that performs serial reads over 5V logic every 2 seconds and outputs the data in the form of a 3 stage RGB LED strip:
@@ -36,7 +37,7 @@ The design of this device is very hacker/tinker friendly:
 ### Instructions
 
 1. On the rear side of the device there are 4 phillips head screws to remove (you will need a decently long shaft screwdiver to access them)
-2. Once the 4 screws are removed, the front and rear parts can be gently pulled to reveal the interior. You can either slide off the whole fan+sensor module or disconnect the 2 JST plugs from the PCB (the latter is suggested since we will be soldering 3 cables to the MCU PCB testpads)
+2. Once the 4 screws are removed, the front and rear parts can be gently pulled to reveal the interior. You can either slide off the whole fan+sensor module or disconnect the 2 JST plugs from the PCB (the latter is suggested since we will be soldering 3 cables to the MCU PCB testpads). Make sure you also pop off the front part the LEDs lightguide, it will be needed later.
 
 ![20211219_023905](https://user-images.githubusercontent.com/2338223/146662948-8405a5e5-0c9c-4823-b3bf-f39b96991f64.jpg)
 
@@ -50,17 +51,28 @@ The design of this device is very hacker/tinker friendly:
 
 ![20211219_024340](https://user-images.githubusercontent.com/2338223/146662115-afcb78f6-d835-47eb-8c23-06c1971dcadb.jpg)
 
-8. Secure the MCU in the 3d printed lid (compared to the picture below, your MCU will have the 3 floating cables attached). Use the original front lid as a support while you are operating so that when you apply pressure from top to bottom, the lightguide won't be pushed off its slot
+8. Insert and press-fit the LEDs lightguide into its slot on the 3d printed front lid
 
-![image](https://user-images.githubusercontent.com/2338223/147313902-57a75c21-29ce-40f7-9daf-047594190f0f.png)
+![20211225_155726](https://user-images.githubusercontent.com/2338223/147388594-4d8dffc1-4418-467c-9222-7db79ce41efc.jpg)
 
-9. Mount a rpi0/rpi0w/rpi0-2 and hook the ![#ff0000](https://via.placeholder.com/15/ff0000/000000?text=+) RED cable (5V) to [PIN #2](https://pinout.xyz/pinout/5v_power), ![#000000](https://via.placeholder.com/15/000000/000000?text=+) BLACK cable (GND) to [PIN #6](https://pinout.xyz/pinout/ground), ![#0000ff](https://via.placeholder.com/15/0000ff/000000?text=+) COLOR cable (TX 3V3 shifted) to [PIN #10](https://pinout.xyz/pinout/pin10_gpio15)
+9. Secure the MCU in the 3d printed lid (compared to the picture below, your MCU will have the 3 floating cables attached). Use the original front lid as a support while you are operating so that when you apply pressure from top to bottom, the lightguide won't be pushed off its slot
 
-10. Slide the logic lever shifter and the floating cables aside the Raspberry Pi zero / zero W / zero 2
-11. Close the rear and front case parts and secure them with the 4 phillips head screws on the rear
-12. Use the rpi0/rpi0w/rpi0-2 power input to power the whole assembly.
-13. Deploy this application
-14. [WIP] Get readings at the device local IP address or public URL
+![9a](https://user-images.githubusercontent.com/2338223/147388546-f0be8763-32cb-4595-8be2-2eecdc4dc80b.jpg)
+
+![9b](https://user-images.githubusercontent.com/2338223/147388547-f4fff879-38d7-4107-9be6-d36ba8edc179.jpg)
+
+10. Mount a rpi0/rpi0w/rpi0-2 and hook the ![#ff0000](https://via.placeholder.com/15/ff0000/000000?text=+) RED cable (5V) to [PIN #2](https://pinout.xyz/pinout/5v_power), ![#000000](https://via.placeholder.com/15/000000/000000?text=+) BLACK cable (GND) to [PIN #6](https://pinout.xyz/pinout/ground), ![#0000ff](https://via.placeholder.com/15/0000ff/000000?text=+) COLOR cable (TX 3V3 shifted) to [PIN #10](https://pinout.xyz/pinout/pin10_gpio15)
+
+![10](https://user-images.githubusercontent.com/2338223/147388556-892a8c50-dbc0-4141-b1e7-f2a7f10b4884.jpg)
+
+11. Slide the logic lever shifter and the floating cables aside the Raspberry Pi zero / zero W / zero 2
+
+![11](https://user-images.githubusercontent.com/2338223/147388562-9218bc57-de07-433c-b7bc-b77a8953feeb.jpg)
+
+12. Close the rear and front case parts and secure them with the 4 phillips head screws on the rear
+13. Use the rpi0/rpi0w/rpi0-2 power input to power the whole assembly.
+14. Deploy this application
+15. [WIP] Get readings at the device local IP address or public URL
 
 ## Progress
 
