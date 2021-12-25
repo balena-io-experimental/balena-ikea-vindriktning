@@ -29,7 +29,7 @@ The design of this device is very hacker/tinker friendly:
 | 5 | Jumper jerky cable | I used 5 from this set: https://shop.pimoroni.com/products/jumper-jerky?variant=348491271 |
 | 1 | Raspberry Pi zero / zero W / zero 2 |  |
 | 1 | 8GB+ uSD card |  |
-| 4 | 2mm x 4mm self tapping screws | I used screws from this set: https://www.amazon.com/dp/B08YDP9DBF/ |
+| 3 | 2mm x 4mm self tapping screws | I used screws from this set: https://www.amazon.com/dp/B08YDP9DBF/ |
 | 1 | 3.3V to 5V logic level shifter | needs to be SERIAL/I2C/SPI safe, such as https://www.adafruit.com/product/757 |
 | 1 | 3d-printed lid for Raspberry Pi zero / zero W / zero 2 | https://github.com/balena-io-playground/balena-ikea-vindriktning/blob/master/ikea_sensor_rpi_lid.stl |
 
@@ -50,7 +50,7 @@ The design of this device is very hacker/tinker friendly:
 
 ![20211219_024340](https://user-images.githubusercontent.com/2338223/146662115-afcb78f6-d835-47eb-8c23-06c1971dcadb.jpg)
 
-8. Secure the MCU in the 3d printed lid (compared to the picture below, your MCU will have the 3 floating cables attached)
+8. Secure the MCU in the 3d printed lid (compared to the picture below, your MCU will have the 3 floating cables attached). Use the original front lid as a support while you are operating so that when you apply pressure from top to bottom, the lightguide won't be pushed off its slot
 
 ![image](https://user-images.githubusercontent.com/2338223/147313902-57a75c21-29ce-40f7-9daf-047594190f0f.png)
 
