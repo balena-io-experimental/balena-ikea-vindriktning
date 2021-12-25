@@ -13,12 +13,15 @@ const port = new SerialPort(SERIAL_PORT, {
 })
 const parser = port.pipe(new ByteLength({ length: BYTE_LENGTH }));
 
-let sensorRead;
+let sensorRead = {};
 
 parser.on('data', (data) => {
     const result = PM.read(data);
     debug(`received PM2.5 reading: ${result}`)
-    sensorRead = result;
+    sensorRead = {
+        "data": result,
+        "timestamp": new Date().getTime()
+    };
 })
 port.on('open', () => {
     console.log('serialport connection open');
